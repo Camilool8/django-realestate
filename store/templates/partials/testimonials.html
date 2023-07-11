@@ -1,0 +1,23 @@
+<section id="testimonials" class="py-5">
+  <div class="container">
+    <div id="testimonials-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        {% for testimonial in testimonials %}
+        <div class="carousel-item {% if forloop.first %}active{% endif %}">
+          <div class="testimonial-content p-4 bg-light rounded">
+            <img src="{{ testimonial.image.url }}" class="testimonial-img rounded-circle mb-3" alt="">
+            <h3 class="testimonial-name">{{ testimonial.name }}</h3>
+            <p class="testimonial-text">{{ testimonial.testimonial }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</section>

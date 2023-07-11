@@ -1,0 +1,421 @@
+/* Navbar Styles */
+
+.navbar {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #333;
+}
+
+.navbar-nav .nav-link {
+  color: #555;
+  padding: .5rem 1rem;
+  transition: color .3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007BFF;  /* You can change the color according to your design */
+}
+
+/* Footer Styles */
+
+.footer {
+  background-color: #333 !important;
+  color: #f8f8f8;
+  padding: 30px 15px;
+}
+
+.footer p {
+  margin-bottom: .5rem;
+}
+
+.footer ul.list-inline {
+  margin-bottom: 0;
+}
+
+.footer ul.list-inline li {
+  margin-right: 15px;
+}
+
+.footer ul.list-inline li a {
+  color: #f8f8f8;
+  transition: color .3s ease;
+}
+
+.footer ul.list-inline li a:hover {
+  color: #007BFF;  /* You can change the color according to your design */
+}
+
+/* Hero Section */
+
+.hero {
+  position: relative;
+  padding: 5rem 0;
+  color: #fff;
+  text-align: center;
+}
+
+.hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero h1, 
+.hero p {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+.hero .input-group {
+  position: relative;
+  z-index: 2;
+  max-width: 600px;
+  margin: 2rem auto 0;
+}
+
+.hero .form-control {
+  height: 3rem;
+  font-size: 1.25rem;
+}
+
+.hero .btn {
+  font-size: 1.25rem;
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+
+/* Featured Properties Section */
+
+#featured-properties {
+  background: #fff;
+  padding: 3rem 0;
+}
+
+#featured-properties h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+#featured-properties .card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
+  animation: fadeInUp 1.5s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+#featured-properties .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.2);
+}
+
+#featured-properties .card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+#featured-properties .card-body {
+  padding: 1.5rem;
+}
+
+#featured-properties .card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#featured-properties .card-text {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+#featured-properties .btn {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+  transition: all 0.3s;
+}
+
+#featured-properties .btn:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+/* Why Choose Us Section */
+
+#why-choose-us {
+  background: #f8f9fa;
+  padding: 3rem 0;
+}
+
+#why-choose-us h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+#why-choose-us .icon {
+  color: #28a745;
+}
+
+#why-choose-us h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+#why-choose-us p {
+  font-size: 1rem;
+  color: #666;
+}
+
+@media (min-width: 768px) {
+  #why-choose-us .col-md-4 {
+    padding: 0 2rem;
+  }
+}
+
+/* Our Team Section */
+
+#our-team {
+  background: #fff; /* Use light gray background for the section */
+}
+
+#our-team h2 {
+  font-family: 'Open Sans', sans-serif; /* Change font as per your preference */
+  font-size: 32px; /* Make the heading a bit larger */
+  font-weight: 700; /* Make the heading bold */
+  color: #333333; /* Dark color for heading */
+}
+
+/* Make the cards all the same height */
+#our-team .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#our-team .col-lg-3 {
+  display: flex;
+}
+
+#our-team .card {
+  flex: 1 0 auto; /* This will ensure all cards will have the same height */
+  position: relative; /* Relative position for .card-text */
+  margin: 10px; /* Add some margin between the cards */
+  border: none; /* No borders */
+  border-radius: 0 !important; /* Remove the default border-radius */
+  background: #f8f9fa; /* White background for each card */
+  overflow-y: hidden; /* Hide vertical overflow */
+}
+
+/* The image used in the card will have a fixed height of 200px */
+#our-team .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0 !important; /* Remove the default border-radius */
+}
+
+#our-team h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+#our-team p{
+  font-size: 0.875rem;
+  color: #666;
+  text-align: justify;
+  width: 80%;
+}
+
+#our-team .card-body {
+  overflow: hidden; /* Hidden overflow for .card-text */
+  height: 240px; /* Define a fixed height for .card-body */
+  padding: 1.25rem; /* Add some padding */
+  border-top: 1px solid #e9ecef; /* Add a gray border on top */
+}
+
+#our-team .card-body .card-text {
+  position: absolute;
+  overflow-y: auto; 
+}
+
+#our-team .card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+}
+
+
+/* Testimonials Section */
+
+#testimonials {
+  background-color: #f8f9fa; /* Light gray background for the testimonials section */
+  color: #333333; /* Dark color for text */
+}
+
+#testimonials-carousel {
+  text-align: center;
+}
+
+.carousel-item {
+  margin: 0 auto; /* Center slide */
+  min-height: 300px; /* Adjust based on your content */
+}
+
+.carousel-inner {
+  display: flex; /* Display carousel items in a row */
+  flex-direction: column; /* Set the direction to column */
+  align-items: center; /* Align items towards the center */
+  max-width: 80%;
+  margin: auto;
+  height: 250px;
+}
+
+
+.testimonial-content {
+  max-width: 80%;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add box-shadow */
+  padding: 30px;
+  background-color: #fff !important; /* White background for content */
+}
+
+.testimonial-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.testimonial-name {
+  font-size: 24px;
+  font-weight: 600; /* Semi-bold for testimonial name */
+  margin-bottom: 10px;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(100%); /* Make the navigation icons white */
+}
+
+/* Partners Section */
+
+#partners {
+  background: #fff;
+  padding: 3rem 0;
+}
+
+#partners h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+#partners .partner img {
+  width: 70%;
+  margin: 0 auto;
+  height: 60px;
+  transition: transform .2s; /* Animation */
+}
+
+#partners .partner img:hover {
+  transform: scale(1.1); /* Zoom on hover */
+}
+
+@media (min-width: 768px) {
+  #partners .col-md-4 {
+    padding: 0 2rem;
+  }
+}
+
+/* Property Detail Page */
+
+.property-detail {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.property-detail .property-info {
+  border-radius: 15px;
+}
+
+.property-detail .property-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.property-detail .property-price {
+  font-size: 1.3rem;
+  color: #6c757d;
+}
+
+.property-detail .property-location {
+  font-size: 1.2rem;
+}
+
+.property-detail .property-description {
+  font-size: 1rem;
+  color: #212529;
+}
+
+.property-detail .btn {
+  font-size: 1.1rem;
+  border-radius: 0;
+}
+
+@media (min-width: 768px) {
+  .property-detail .property-info {
+    position: sticky;
+    top: 2rem;
+  }
+}
+
+
+

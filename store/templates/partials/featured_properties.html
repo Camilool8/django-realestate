@@ -1,0 +1,22 @@
+<section id="featured-properties" class="py-5">
+    <div class="container">
+        <h2 class="display-4 text-center mb-5">Featured Properties</h2>
+        <div class="row">
+            {% for property in properties %}
+            {% if property.is_featured %}
+            <div class="col-lg-4 mb-4">
+                <div class="card">
+                    <img src="{{ property.image.url }}" class="card-img-top" alt="{{ property.name }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ property.name }}</h5>
+                        <p class="card-text">{{ property.location }}</p>
+                        <p class="card-text">{{ property.price }}</p>
+                        <a href="{% url 'property_detail' property.id %}" class="btn btn-success">View Property</a>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
